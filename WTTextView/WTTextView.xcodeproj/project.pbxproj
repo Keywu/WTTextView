@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D253D80370A4F8C556BA537 /* libPods-WTTextView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429EDE3A7D2E5F16543D3A71 /* libPods-WTTextView.a */; };
+		9AB41C5A206A469D0067A225 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C59206A469D0067A225 /* AppDelegate.m */; };
+		9AB41C5D206A469D0067A225 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C5C206A469D0067A225 /* ViewController.m */; };
+		9AB41C60206A469D0067A225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB41C5E206A469D0067A225 /* Main.storyboard */; };
+		9AB41C62206A469D0067A225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB41C61206A469D0067A225 /* Assets.xcassets */; };
+		9AB41C65206A469D0067A225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB41C63206A469D0067A225 /* LaunchScreen.storyboard */; };
+		9AB41C68206A469D0067A225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C67206A469D0067A225 /* main.m */; };
+		9AB41C72206A469D0067A225 /* WTTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C71206A469D0067A225 /* WTTextViewTests.m */; };
+		9AB41C7D206A469D0067A225 /* WTTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AB41C6E206A469D0067A225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB41C4D206A469C0067A225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB41C54206A469D0067A225;
+			remoteInfo = WTTextView;
+		};
+		9AB41C79206A469D0067A225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB41C4D206A469C0067A225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB41C54206A469D0067A225;
+			remoteInfo = WTTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23990CF8BE944C7777000FC4 /* Pods-WTTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTTextView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTTextView/Pods-WTTextView.release.xcconfig"; sourceTree = "<group>"; };
+		429EDE3A7D2E5F16543D3A71 /* libPods-WTTextView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTTextView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A8EA718527DB150B6EFC9D /* Pods-WTTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTTextView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTTextView/Pods-WTTextView.debug.xcconfig"; sourceTree = "<group>"; };
+		9AB41C55206A469D0067A225 /* WTTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB41C58206A469D0067A225 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AB41C59206A469D0067A225 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AB41C5B206A469D0067A225 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9AB41C5C206A469D0067A225 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9AB41C5F206A469D0067A225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AB41C61206A469D0067A225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AB41C64206A469D0067A225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AB41C66206A469D0067A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB41C67206A469D0067A225 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AB41C6D206A469D0067A225 /* WTTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB41C71206A469D0067A225 /* WTTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextViewTests.m; sourceTree = "<group>"; };
+		9AB41C73206A469D0067A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB41C78206A469D0067A225 /* WTTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextViewUITests.m; sourceTree = "<group>"; };
+		9AB41C7E206A469D0067A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AB41C52206A469D0067A225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D253D80370A4F8C556BA537 /* libPods-WTTextView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB41C6A206A469D0067A225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB41C75206A469D0067A225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92294B30024E69D49BAEC8F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				429EDE3A7D2E5F16543D3A71 /* libPods-WTTextView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB41C4C206A469C0067A225 = {
+			isa = PBXGroup;
+			children = (
+				9AB41C57206A469D0067A225 /* WTTextView */,
+				9AB41C70206A469D0067A225 /* WTTextViewTests */,
+				9AB41C7B206A469D0067A225 /* WTTextViewUITests */,
+				9AB41C56206A469D0067A225 /* Products */,
+				9CADCFC64CB9B2456A185F34 /* Pods */,
+				92294B30024E69D49BAEC8F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AB41C56206A469D0067A225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AB41C55206A469D0067A225 /* WTTextView.app */,
+				9AB41C6D206A469D0067A225 /* WTTextViewTests.xctest */,
+				9AB41C78206A469D0067A225 /* WTTextViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AB41C57206A469D0067A225 /* WTTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9AB41C58206A469D0067A225 /* AppDelegate.h */,
+				9AB41C59206A469D0067A225 /* AppDelegate.m */,
+				9AB41C5B206A469D0067A225 /* ViewController.h */,
+				9AB41C5C206A469D0067A225 /* ViewController.m */,
+				9AB41C5E206A469D0067A225 /* Main.storyboard */,
+				9AB41C61206A469D0067A225 /* Assets.xcassets */,
+				9AB41C63206A469D0067A225 /* LaunchScreen.storyboard */,
+				9AB41C66206A469D0067A225 /* Info.plist */,
+				9AB41C67206A469D0067A225 /* main.m */,
+			);
+			path = WTTextView;
+			sourceTree = "<group>";
+		};
+		9AB41C70206A469D0067A225 /* WTTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AB41C71206A469D0067A225 /* WTTextViewTests.m */,
+				9AB41C73206A469D0067A225 /* Info.plist */,
+			);
+			path = WTTextViewTests;
+			sourceTree = "<group>";
+		};
+		9AB41C7B206A469D0067A225 /* WTTextViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */,
+				9AB41C7E206A469D0067A225 /* Info.plist */,
+			);
+			path = WTTextViewUITests;
+			sourceTree = "<group>";
+		};
+		9CADCFC64CB9B2456A185F34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73A8EA718527DB150B6EFC9D /* Pods-WTTextView.debug.xcconfig */,
+				23990CF8BE944C7777000FC4 /* Pods-WTTextView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AB41C54206A469D0067A225 /* WTTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB41C81206A469D0067A225 /* Build configuration list for PBXNativeTarget "WTTextView" */;
+			buildPhases = (
+				FAD9FA25CA67168B6AD02783 /* [CP] Check Pods Manifest.lock */,
+				9AB41C51206A469D0067A225 /* Sources */,
+				9AB41C52206A469D0067A225 /* Frameworks */,
+				9AB41C53206A469D0067A225 /* Resources */,
+				FBDCBFD6693C064FDC9074CC /* [CP] Embed Pods Frameworks */,
+				13E054FF48B060604D60AE5D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTTextView;
+			productName = WTTextView;
+			productReference = 9AB41C55206A469D0067A225 /* WTTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AB41C6C206A469D0067A225 /* WTTextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB41C84206A469D0067A225 /* Build configuration list for PBXNativeTarget "WTTextViewTests" */;
+			buildPhases = (
+				9AB41C69206A469D0067A225 /* Sources */,
+				9AB41C6A206A469D0067A225 /* Frameworks */,
+				9AB41C6B206A469D0067A225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB41C6F206A469D0067A225 /* PBXTargetDependency */,
+			);
+			name = WTTextViewTests;
+			productName = WTTextViewTests;
+			productReference = 9AB41C6D206A469D0067A225 /* WTTextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AB41C77206A469D0067A225 /* WTTextViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB41C87206A469D0067A225 /* Build configuration list for PBXNativeTarget "WTTextViewUITests" */;
+			buildPhases = (
+				9AB41C74206A469D0067A225 /* Sources */,
+				9AB41C75206A469D0067A225 /* Frameworks */,
+				9AB41C76206A469D0067A225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB41C7A206A469D0067A225 /* PBXTargetDependency */,
+			);
+			name = WTTextViewUITests;
+			productName = WTTextViewUITests;
+			productReference = 9AB41C78206A469D0067A225 /* WTTextViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AB41C4D206A469C0067A225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = org.objc.yandere;
+				TargetAttributes = {
+					9AB41C54206A469D0067A225 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9AB41C6C206A469D0067A225 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AB41C54206A469D0067A225;
+					};
+					9AB41C77206A469D0067A225 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AB41C54206A469D0067A225;
+					};
+				};
+			};
+			buildConfigurationList = 9AB41C50206A469C0067A225 /* Build configuration list for PBXProject "WTTextView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AB41C4C206A469C0067A225;
+			productRefGroup = 9AB41C56206A469D0067A225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AB41C54206A469D0067A225 /* WTTextView */,
+				9AB41C6C206A469D0067A225 /* WTTextViewTests */,
+				9AB41C77206A469D0067A225 /* WTTextViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AB41C53206A469D0067A225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB41C65206A469D0067A225 /* LaunchScreen.storyboard in Resources */,
+				9AB41C62206A469D0067A225 /* Assets.xcassets in Resources */,
+				9AB41C60206A469D0067A225 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB41C6B206A469D0067A225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB41C76206A469D0067A225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13E054FF48B060604D60AE5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTTextView/Pods-WTTextView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD9FA25CA67168B6AD02783 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTTextView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBDCBFD6693C064FDC9074CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTTextView/Pods-WTTextView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AB41C51206A469D0067A225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB41C5D206A469D0067A225 /* ViewController.m in Sources */,
+				9AB41C68206A469D0067A225 /* main.m in Sources */,
+				9AB41C5A206A469D0067A225 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB41C69206A469D0067A225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB41C72206A469D0067A225 /* WTTextViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB41C74206A469D0067A225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB41C7D206A469D0067A225 /* WTTextViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AB41C6F206A469D0067A225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB41C54206A469D0067A225 /* WTTextView */;
+			targetProxy = 9AB41C6E206A469D0067A225 /* PBXContainerItemProxy */;
+		};
+		9AB41C7A206A469D0067A225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB41C54206A469D0067A225 /* WTTextView */;
+			targetProxy = 9AB41C79206A469D0067A225 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AB41C5E206A469D0067A225 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB41C5F206A469D0067A225 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AB41C63206A469D0067A225 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB41C64206A469D0067A225 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AB41C7F206A469D0067A225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9AB41C80206A469D0067A225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AB41C82206A469D0067A225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A8EA718527DB150B6EFC9D /* Pods-WTTextView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WTTextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.objc.yandere.WTTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AB41C83206A469D0067A225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23990CF8BE944C7777000FC4 /* Pods-WTTextView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WTTextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.objc.yandere.WTTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AB41C85206A469D0067A225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WTTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.objc.yandere.WTTextViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTTextView.app/WTTextView";
+			};
+			name = Debug;
+		};
+		9AB41C86206A469D0067A225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WTTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.objc.yandere.WTTextViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTTextView.app/WTTextView";
+			};
+			name = Release;
+		};
+		9AB41C88206A469D0067A225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WTTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.objc.yandere.WTTextViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WTTextView;
+			};
+			name = Debug;
+		};
+		9AB41C89206A469D0067A225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WTTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.objc.yandere.WTTextViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WTTextView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AB41C50206A469C0067A225 /* Build configuration list for PBXProject "WTTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB41C7F206A469D0067A225 /* Debug */,
+				9AB41C80206A469D0067A225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB41C81206A469D0067A225 /* Build configuration list for PBXNativeTarget "WTTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB41C82206A469D0067A225 /* Debug */,
+				9AB41C83206A469D0067A225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB41C84206A469D0067A225 /* Build configuration list for PBXNativeTarget "WTTextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB41C85206A469D0067A225 /* Debug */,
+				9AB41C86206A469D0067A225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB41C87206A469D0067A225 /* Build configuration list for PBXNativeTarget "WTTextViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB41C88206A469D0067A225 /* Debug */,
+				9AB41C89206A469D0067A225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AB41C4D206A469C0067A225 /* Project object */;
+}
