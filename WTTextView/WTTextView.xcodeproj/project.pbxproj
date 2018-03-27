@@ -16,6 +16,9 @@
 		9AB41C68206A469D0067A225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C67206A469D0067A225 /* main.m */; };
 		9AB41C72206A469D0067A225 /* WTTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C71206A469D0067A225 /* WTTextViewTests.m */; };
 		9AB41C7D206A469D0067A225 /* WTTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */; };
+		CE0D459F206A80D300C3EDFF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D459E206A80D300C3EDFF /* WTTextView.m */; };
+		CE0D45A2206A81A600C3EDFF /* WTTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D45A1206A81A600C3EDFF /* WTTextRange.m */; };
+		CE0D45A5206A838F00C3EDFF /* WTTextPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D45A4206A838F00C3EDFF /* WTTextPosition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		9AB41C78206A469D0067A225 /* WTTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextViewUITests.m; sourceTree = "<group>"; };
 		9AB41C7E206A469D0067A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0D459D206A80D300C3EDFF /* WTTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTextView.h; sourceTree = "<group>"; };
+		CE0D459E206A80D300C3EDFF /* WTTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextView.m; sourceTree = "<group>"; };
+		CE0D45A0206A81A600C3EDFF /* WTTextRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTextRange.h; sourceTree = "<group>"; };
+		CE0D45A1206A81A600C3EDFF /* WTTextRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextRange.m; sourceTree = "<group>"; };
+		CE0D45A3206A838F00C3EDFF /* WTTextPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTextPosition.h; sourceTree = "<group>"; };
+		CE0D45A4206A838F00C3EDFF /* WTTextPosition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextPosition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +129,12 @@
 				9AB41C59206A469D0067A225 /* AppDelegate.m */,
 				9AB41C5B206A469D0067A225 /* ViewController.h */,
 				9AB41C5C206A469D0067A225 /* ViewController.m */,
+				CE0D459D206A80D300C3EDFF /* WTTextView.h */,
+				CE0D459E206A80D300C3EDFF /* WTTextView.m */,
+				CE0D45A0206A81A600C3EDFF /* WTTextRange.h */,
+				CE0D45A1206A81A600C3EDFF /* WTTextRange.m */,
+				CE0D45A3206A838F00C3EDFF /* WTTextPosition.h */,
+				CE0D45A4206A838F00C3EDFF /* WTTextPosition.m */,
 				9AB41C5E206A469D0067A225 /* Main.storyboard */,
 				9AB41C61206A469D0067A225 /* Assets.xcassets */,
 				9AB41C63206A469D0067A225 /* LaunchScreen.storyboard */,
@@ -343,9 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0D45A5206A838F00C3EDFF /* WTTextPosition.m in Sources */,
 				9AB41C5D206A469D0067A225 /* ViewController.m in Sources */,
 				9AB41C68206A469D0067A225 /* main.m in Sources */,
+				CE0D459F206A80D300C3EDFF /* WTTextView.m in Sources */,
 				9AB41C5A206A469D0067A225 /* AppDelegate.m in Sources */,
+				CE0D45A2206A81A600C3EDFF /* WTTextRange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
