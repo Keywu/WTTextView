@@ -28,4 +28,8 @@
     return [WTTextPosition textPositionWithIndex:self.range.location + self.range.length];
 }
 
+- (BOOL)isEmpty {
+    return self.range.length == 0 ;
+}
+
 @end

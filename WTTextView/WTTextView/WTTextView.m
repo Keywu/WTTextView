@@ -12,11 +12,49 @@
 
 @interface WTTextView()
 
-@property (nonatomic, copy) NSString *text;
+@property (nonatomic, strong) NSMutableString *text;
+
 
 @end
 
 @implementation WTTextView
+
+#pragma mark - UITextInput protocol property synthesize
+
+@synthesize markedTextStyle = _markedTextStyle;
+@synthesize inputDelegate = _inputDelegate;
+@synthesize tokenizer = _tokenizer;
+
+#pragma mark - init
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        _tokenizer = [[UITextInputStringTokenizer alloc] initWithTextInput:self];
+    }
+    return self;
+}
+
+#pragma mark - UITextInput protocol property methods
+- (void)setSelectedTextRange:(UITextRange *)selectedTextRange {
+    
+}
+
+- (UITextRange *)selectedTextRange {
+    return [WTTextRange textRangeWithRange:NSMakeRange(0, 0)];
+}
+
+- (UITextRange *)markedTextRange {
+    return [WTTextRange textRangeWithRange:NSMakeRange(0, 0)];
+}
+
+- (UITextPosition *)beginningOfDocument {
+    return [WTTextPosition textPositionWithIndex:0];
+}
+
+- (UITextPosition *)endOfDocument {
+    return [WTTextPosition textPositionWithIndex:0];
+}
 
 #pragma mark - UITextInput protocol required methods
 
@@ -131,6 +169,55 @@
             break;
     }
     return [WTTextRange textRangeWithRange:range];
+}
+
+- (UITextWritingDirection)baseWritingDirectionForPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction {
+    return UITextWritingDirectionLeftToRight;
+}
+
+- (void)setBaseWritingDirection:(UITextWritingDirection)writingDirection forRange:(UITextRange *)range {
+    
+}
+
+- (CGRect)firstRectForRange:(UITextRange *)range {
+    return CGRectZero;
+}
+
+- (CGRect)caretRectForPosition:(UITextPosition *)position {
+//    WTTextPosition *textPosition = (WTTextPosition *)position;
+//    textPosition.index;
+    return CGRectZero;
+}
+
+- (NSArray *)selectionRectsForRange:(UITextRange *)range {
+    return nil;
+}
+
+- (UITextPosition *)closestPositionToPoint:(CGPoint)point {
+    return nil;
+}
+
+- (UITextPosition *)closestPositionToPoint:(CGPoint)point withinRange:(UITextRange *)range {
+    return nil;
+}
+
+- (UITextRange *)characterRangeAtPoint:(CGPoint)point {
+    return nil;
+}
+
+#pragma mark - UIKeyInput protocol
+
+- (BOOL)hasText {
+    return self.text.length;
+}
+
+// Todo
+- (void)insertText:(NSString *)text {
+    
+}
+
+- (void)deleteBackward {
+    
 }
 
 @end
