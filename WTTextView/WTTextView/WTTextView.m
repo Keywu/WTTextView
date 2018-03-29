@@ -9,11 +9,13 @@
 #import "WTTextView.h"
 #import "WTTextPosition.h"
 #import "WTTextRange.h"
+#import "WTTextContainer.h"
+#import <Masonry/Masonry.h>
 
 @interface WTTextView()
 
 @property (nonatomic, strong) NSMutableString *text;
-
+@property (nonatomic, weak) WTTextContainer *textContainer;
 
 @end
 
@@ -31,6 +33,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         _tokenizer = [[UITextInputStringTokenizer alloc] initWithTextInput:self];
+        WTTextContainer *container = [[WTTextContainer alloc] init];
+        [self addSubview:container];
+        [container mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.right.bottom.equalTo(self);
+        }];
+        _textContainer = container;
     }
     return self;
 }

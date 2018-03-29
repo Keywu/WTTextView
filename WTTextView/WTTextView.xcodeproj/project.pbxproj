@@ -16,6 +16,9 @@
 		9AB41C68206A469D0067A225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C67206A469D0067A225 /* main.m */; };
 		9AB41C72206A469D0067A225 /* WTTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C71206A469D0067A225 /* WTTextViewTests.m */; };
 		9AB41C7D206A469D0067A225 /* WTTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */; };
+		9AB41C8C206C89650067A225 /* WTTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB41C8B206C89650067A225 /* WTTextContainer.m */; };
+		9AB41C8E206C9DD90067A225 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB41C8D206C9DD90067A225 /* CoreText.framework */; };
+		9AB41C90206C9DE10067A225 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB41C8F206C9DE10067A225 /* QuartzCore.framework */; };
 		CE0D459F206A80D300C3EDFF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D459E206A80D300C3EDFF /* WTTextView.m */; };
 		CE0D45A2206A81A600C3EDFF /* WTTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D45A1206A81A600C3EDFF /* WTTextRange.m */; };
 		CE0D45A5206A838F00C3EDFF /* WTTextPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D45A4206A838F00C3EDFF /* WTTextPosition.m */; };
@@ -58,6 +61,10 @@
 		9AB41C78206A469D0067A225 /* WTTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB41C7C206A469D0067A225 /* WTTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextViewUITests.m; sourceTree = "<group>"; };
 		9AB41C7E206A469D0067A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB41C8A206C89650067A225 /* WTTextContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTextContainer.h; sourceTree = "<group>"; };
+		9AB41C8B206C89650067A225 /* WTTextContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextContainer.m; sourceTree = "<group>"; };
+		9AB41C8D206C9DD90067A225 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9AB41C8F206C9DE10067A225 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CE0D459D206A80D300C3EDFF /* WTTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTextView.h; sourceTree = "<group>"; };
 		CE0D459E206A80D300C3EDFF /* WTTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTextView.m; sourceTree = "<group>"; };
 		CE0D45A0206A81A600C3EDFF /* WTTextRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTextRange.h; sourceTree = "<group>"; };
@@ -71,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB41C90206C9DE10067A225 /* QuartzCore.framework in Frameworks */,
+				9AB41C8E206C9DD90067A225 /* CoreText.framework in Frameworks */,
 				4D253D80370A4F8C556BA537 /* libPods-WTTextView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +104,8 @@
 		92294B30024E69D49BAEC8F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AB41C8F206C9DE10067A225 /* QuartzCore.framework */,
+				9AB41C8D206C9DD90067A225 /* CoreText.framework */,
 				429EDE3A7D2E5F16543D3A71 /* libPods-WTTextView.a */,
 			);
 			name = Frameworks;
@@ -135,6 +146,8 @@
 				CE0D45A1206A81A600C3EDFF /* WTTextRange.m */,
 				CE0D45A3206A838F00C3EDFF /* WTTextPosition.h */,
 				CE0D45A4206A838F00C3EDFF /* WTTextPosition.m */,
+				9AB41C8A206C89650067A225 /* WTTextContainer.h */,
+				9AB41C8B206C89650067A225 /* WTTextContainer.m */,
 				9AB41C5E206A469D0067A225 /* Main.storyboard */,
 				9AB41C61206A469D0067A225 /* Assets.xcassets */,
 				9AB41C63206A469D0067A225 /* LaunchScreen.storyboard */,
@@ -360,6 +373,7 @@
 			files = (
 				CE0D45A5206A838F00C3EDFF /* WTTextPosition.m in Sources */,
 				9AB41C5D206A469D0067A225 /* ViewController.m in Sources */,
+				9AB41C8C206C89650067A225 /* WTTextContainer.m in Sources */,
 				9AB41C68206A469D0067A225 /* main.m in Sources */,
 				CE0D459F206A80D300C3EDFF /* WTTextView.m in Sources */,
 				9AB41C5A206A469D0067A225 /* AppDelegate.m in Sources */,
