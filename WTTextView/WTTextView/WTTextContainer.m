@@ -30,6 +30,20 @@
     return self;
 }
 
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    if (_ctFrame != NULL) {
+        [self updateCTFrame];
+    }
+}
+
+- (void)setBounds:(CGRect)bounds {
+    [super setBounds:bounds];
+    if (_ctFrame != NULL) {
+        [self updateCTFrame];
+    }
+}
+
 - (void)textChanged {
     [self setNeedsDisplay];
     [self clearPreviousLayoutInformation];
@@ -59,6 +73,19 @@
     if (_ctFrame != NULL) {
         CFRelease(_ctFrame);
         _ctFrame = nil;
+    }
+}
+
+- (void)drawSelectionRange:(NSRange)selectionRange {
+    if (selectionRange.length == 0 || selectionRange.location == NSNotFound) return;
+    [[UIColor greenColor] setFill];
+    CFArrayRef lines = CTFrameGetLines(_ctFrame);
+    CFIndex linesCount = CFArrayGetCount(lines);
+    for (CFIndex linesIndex = 0; linesIndex < linesCount; linesIndex++) {
+        CTLineRef line = CFArrayGetValueAtIndex(lines, linesIndex);
+        CFRange lineRange = CTLineGetStringRange(line);
+        NSRange range = NSMakeRange(lineRange.location, lineRange.length);
+        
     }
 }
 
